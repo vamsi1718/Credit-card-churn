@@ -32,6 +32,7 @@ X_1 = df[[ 'PAY_1','PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6' ]]
 y_1 = df['default payment']
 X_train,X_test , y_train ,  y_test  = train_test_split (X_1 , y_1 , test_size = 0.2)
 
+print(model.predict([[0,1,0,0,1,0]]))
 
 model_credit = LogisticRegression(penalty='l2',  C=10 , solver = 'lbfgs' )
 
